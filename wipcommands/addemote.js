@@ -12,7 +12,8 @@ module.exports = {
     .addStringOption( option =>
       option.setName('name')
         .setDescription('the name of the emoji')
-        .setRequired(true)),
+        .setRequired(true))
+        .setDefaultMemberPermissions(PermissionsFlagsBits.ManageEmojis),
 	async execute(interaction) {
     const emojiAttachment = interaction.options.getAttachment('image');
     const emojiPic = emojiAttachment.url;
