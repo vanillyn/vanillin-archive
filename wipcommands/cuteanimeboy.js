@@ -7,7 +7,7 @@ module.exports = {
 		.setName('cuteanimeboy')
 		.setDescription('get a cute anime boy from gelbooru!'),
 	async execute(interaction) {
-		const result = await request(`https://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=1&tags=1boy+trap+-rating:explicit+-rating:questionable+-1girl+-2girls+-3girls+-4girls+-5girls+-child&json=1`)
+		const result = await request(`https://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=1&tags=1boy+trap+-rating:explicit+-rating:questionable+-1girl+-2girls+-3girls+-4girls+-5girls+-child&json=1&api_key=${gelkey}&user_id=${gelid}`)
 		const file = await result.body.json()
 		const gpost = file.post
 		console.log(file)
