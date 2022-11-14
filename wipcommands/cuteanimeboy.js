@@ -1,5 +1,3 @@
-
-
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { gelkey, gelid } = require("../config.json");
 const { request } = require('undici');
