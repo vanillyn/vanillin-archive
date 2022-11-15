@@ -1,4 +1,15 @@
 ![vanillin](https://cdn.upload.systems/uploads/qM6Hlpkc.png)
+**this readme is unfinished**
+
+- [x] Re-learn discord.js
+- [x] Finish branding
+- [x] Finish emotions commands
+- [ ] Finish emojis commands 
+- [ ] Finish API commands
+- [ ] Finish Utility commands
+- [ ] Open server
+- [ ] Polish
+- [ ] maybe make moderation command things
 
 a wip utility/emotions bot made by vanillyn
 
