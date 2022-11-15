@@ -8,5 +8,19 @@
 	"youtubekey": "",
 	"gelkey": "",
 	"gelid": "",
-	"steamkey": ""
+	"steamkey": "",
+		"vanillyn": {
+			"icon": {
+				"dev": "",
+				"ea": "".
+				"final": ""},
+			"banner": {
+				"dev": "",
+				"ea": "",
+				"final": ""},
+			"invite": {
+				"dev": "",
+				"ea": "",
+				"final": ""}
+		}
 } 
