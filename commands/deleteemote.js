@@ -1,4 +1,4 @@
-const { SlashCommandBuilder PermissionsFlagsBits } = require('discord.js');
+const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -8,10 +8,10 @@ module.exports = {
       option.setName('name')
         .setDescription('the name of the emoji')
         .setRequired(true))
-        .setDefaultMemberPermissions(PermissionsFlagsBits.ManageEmojis),
+        .setDefaultMemberPermissions(PermissionFlagsBits.ManageEmojis),
 	async execute(interaction) {
     const emojiName = interaction.options.getString('name');
-    await interaction.guild.emojis.delete( name: emojiName);
+    await interaction.guild.emojis.delete({name: emojiName});
 		await interaction.reply({ content: `removed emoji \`${emojiName}\`!` });
 	},
 };

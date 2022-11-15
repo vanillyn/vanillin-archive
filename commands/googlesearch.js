@@ -1,5 +1,4 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
-const { google } = require('googleapis');
 const { googlekey, searchid } = require("../config.json");
 const { request } = require('undici');
 

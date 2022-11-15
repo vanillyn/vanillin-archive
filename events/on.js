@@ -5,6 +5,7 @@ module.exports = {
 	once: true,
 	execute(client) {
 		console.log(`ready, ${client.user.tag}`);
-		client.user.setActivity('Flavor Wars!', { type: ActivityType.Competing });
+		client.user.setActivity('meows', { type: ActivityType.Listening });
+		setInterval(activity => { client.user.setActivity('Flavor Wars!', { type: ActivityType.Competing }); }, 3600000);
 	},
 };

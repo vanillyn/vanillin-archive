@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -13,13 +13,13 @@ module.exports = {
       option.setName('name')
         .setDescription('the name of the emoji')
         .setRequired(true))
-        .setDefaultMemberPermissions(PermissionsFlagsBits.ManageEmojis),
+        .setDefaultMemberPermissions(PermissionFlagsBits.ManageEmojis),
 	async execute(interaction) {
     const emojiAttachment = interaction.options.getAttachment('image');
     const emojiPic = emojiAttachment.url;
     const emojiName = interaction.options.getString('name');
     
-    await interaction.guild.emojis.create( attachment: emojiPic, name: emojiName);
+    await interaction.guild.emojis.create({attachment: emojiPic, name: emojiName});
 		await interaction.reply({ content: `added emoji \`${emojiName}\`!` });
 	},
 };
