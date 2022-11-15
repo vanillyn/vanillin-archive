@@ -3,24 +3,42 @@
 	"clientId": "",
 	"guildId": "",
 	"ownerId": "",
-	"googlekey": "",
-	"searchid": "",
-	"youtubekey": "",
-	"gelkey": "",
-	"gelid": "",
-	"steamkey": "",
-		"vanillyn": {
-			"icon": {
-				"dev": "",
-				"ea": "",
-				"final": ""},
-			"banner": {
-				"dev": "",
-				"ea": "",
-				"final": ""},
-			"invite": {
-				"dev": "",
-				"ea": "",
-				"final": ""}
+	"auth": {
+		"google": {
+			"googlekey": "",
+			"searchid": "",
+			"youtubekey": "",
+		},
+		"gelkey": "",
+		"gelid": "",
+		"steamkey": "",
+		"anilistkey": "",
+	}
+	"vanillin": {
+		"icon": {
+			"dev": "",
+			"ea": "",
+			"final": ""},
+		"banner": {
+			"dev": "",
+			"ea": "",
+			"final": ""},
+		"invite": {
+			"dev": "",
+			"ea": "",
+			"final": ""},
+		"dev": {
+			"vanillyn": {
+				"name": "Vanillyn",
+				"tag": "Vanillyn#0001",
+				"id": "",
+				"icon": ""},
+			"user": {
+				"name": "",
+				"tag": "",
+				"id": "",
+				"icon": ""},
+			},
+			
 		}
 } 
