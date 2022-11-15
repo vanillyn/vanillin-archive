@@ -4,7 +4,7 @@ const gifs = ['','','','']
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('blush')
-		.setDescription('ahehe... *runs*')
+		.setDescription('display embarrassment or something')
 	async execute(interaction) {
 		const gif = Math.floor(Math.random() * gifs.length);
 		const embed = new EmbedBuilder()
