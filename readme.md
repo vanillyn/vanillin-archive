@@ -1,9 +1,11 @@
 ![vanillin](https://cdn.upload.systems/uploads/qM6Hlpkc.png)
 **this readme is unfinished**
 
-- [x] Re-learn discord.js
 - [x] Finish branding
 - [x] Finish emotions commands
+- [x] Regret using discord.js instead of Oceanic
+- [x] Have every single person make fun of you for using discord.js
+- [x] Cry
 - [ ] Finish emojis commands 
 - [ ] Finish API commands
 - [ ] Finish Utility commands
