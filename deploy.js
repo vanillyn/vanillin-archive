@@ -21,7 +21,7 @@ const rest = new REST({ version: '10' }).setToken(token);
 (async () => {
 	try {
 		console.log(`refreshing ${commands.length} commands.`);
-		commands.forEach(element => console.log(element));
+		commands.forEach(element => console.log(`/${element.name} loaded!`));
 		const data = await rest.put(
 			Routes.applicationCommands(clientId),
 			{ body: commands },
