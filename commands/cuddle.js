@@ -17,7 +17,7 @@ module.exports = {
 			const embed = new EmbedBuilder()
 				.setColor(0xFF9DDE)
 				.setDescription(`I cuddle ${interaction.user} because I'm lonely too...`)
-				.setAuthor({ name: 'Vanillin' })
+				.setAuthor({ name: 'Vanillin Dev', iconURL: vanillin.icon.dev, url: vanillin.site })
 				.setImage(gifs[gif])
 				.setTimestamp();
 			await interaction.followUp({ content: `${interaction.user}`, embeds: [embed] });
@@ -26,7 +26,7 @@ module.exports = {
 		const embed = new EmbedBuilder()
 			.setColor(0xFF9DDE)
 			.setDescription(`${interaction.user} cuddles ${cuddles}! <3`)
-			.setAuthor({ name: 'Vanillin' })
+			.setAuthor({ name: 'Vanillin Dev', iconURL: vanillin.icon.dev, url: vanillin.site })
 			.setImage(gifs[gif])
 			.setTimestamp();
 		await interaction.reply({ content: `${cuddles}`, embeds: [embed] });

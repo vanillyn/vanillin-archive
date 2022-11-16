@@ -19,7 +19,7 @@ module.exports = {
 		const embed = new EmbedBuilder()
 			.setColor(0xFF9DDE)
 			.setDescription(`${interaction.user} suddenly licks ${licked}!`)
-			.setAuthor({ name: 'Vanillin' })
+			.setAuthor({ name: 'Vanillin Dev', iconURL: vanillin.icon.dev, url: vanillin.site })
 			.setImage(gifs[gif])
 			.setTimestamp();
 		await interaction.reply({ content: `${licked}`, embeds: [embed] });

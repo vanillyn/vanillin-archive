@@ -19,7 +19,7 @@ module.exports = {
 		const embed = new EmbedBuilder()
 			.setColor(0xFFF8A5)
 			.setDescription(`${interaction.user} and ${battled} are battling!`)
-			.setAuthor({ name: 'Vanillin' })
+			.setAuthor({ name: 'Vanillin Dev', iconURL: vanillin.icon.dev, url: vanillin.site })
 			.setImage(gifs[gif])
 			.setTimestamp();
 		await interaction.reply({ content: `${battled}`, embeds: [embed] });

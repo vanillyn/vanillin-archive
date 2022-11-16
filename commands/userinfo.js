@@ -10,7 +10,7 @@ module.exports = {
 	async execute(interaction) {
 		const membertarget = interaction.options.getMember('user') ?? interaction.member;
 		const usertarget = membertarget.user;
-		const userBanner = usertarget.bannerURL() ?? 'https://cdn.upload.systems/uploads/qM6Hlpkc.png';
+		const userBanner = usertarget.bannerURL() ?? vanillin.banner;
 		const boost = membertarget.premiumSinceTimestamp ?? 'This user hasn\'nt boosted this server';
 		if (usertarget.bot == true) {
 			await interaction.reply({ content: 'This is a bot!', ephemeral: true });
@@ -19,7 +19,7 @@ module.exports = {
 			const embed = new EmbedBuilder()
 				.setColor(membertarget.accentColor)
 				.setTitle(usertarget.tag)
-				.setAuthor({ name: 'Vanillin' })
+			.setAuthor({ name: 'Vanillin Dev', iconURL: vanillin.icon.dev, url: vanillin.site })
 				.addFields(
 					{ name: 'date created', value: `<t:${usertarget.createdTimestamp / 1000}:f>` },
 					{ name: 'date joined', value: `<t:${membertarget.joinedTimestamp / 1000}:f>` },

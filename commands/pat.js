@@ -17,7 +17,7 @@ module.exports = {
 			const embed = new EmbedBuilder()
 				.setColor(0xFF9DDE)
 				.setDescription(`I softly pat ${interaction.user} for being cute! :3`)
-				.setAuthor({ name: 'Vanillin' })
+			.setAuthor({ name: 'Vanillin Dev', iconURL: vanillin.icon.dev, url: vanillin.site })
 				.setImage(gifs[gif])
 				.setTimestamp();
 			await interaction.followUp({ content: `${interaction.user}`, embeds: [embed] });
@@ -27,7 +27,7 @@ module.exports = {
 			const embed = new EmbedBuilder()
 				.setColor(0xFF9DDE)
 				.setDescription(`${interaction.user} softly pats ${patd}! c:`)
-				.setAuthor({ name: 'Vanillin' })
+			.setAuthor({ name: 'Vanillin Dev', iconURL: vanillin.icon.dev, url: vanillin.site })
 				.setImage(gifs[gif])
 				.setTimestamp();
 			await interaction.reply({ content: `${patd}`, embeds: [embed] });

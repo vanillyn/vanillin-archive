@@ -1,4 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const { vanillin } = require('../config.json');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -10,12 +11,12 @@ module.exports = {
 		const vanityinv = interaction.guild.vanityURLCode ?? 'This server does not have a vanity url.';
 		const emojis = interaction.guild.emojis.fetch().then(emojis => { return emojis.size; }) ?? 'There are no emojis on this server.';
 		const emojiCount = await emojis;
-		const guildBanner = interaction.guild.bannerURL() ?? 'https://cdn.upload.systems/uploads/qM6Hlpkc.png';
+		const guildBanner = interaction.guild.bannerURL() ?? vanillin.banner;
 		const embed = new EmbedBuilder()
 			.setColor(0x2B8AFF)
 			.setTitle(interaction.guild.name)
 			.setDescription(guildDesc)
-			.setAuthor({ name: 'Vanillin' })
+			.setAuthor({ name: 'Vanillin Dev', iconURL: vanillin.icon.dev, url: vanillin.site })
 			.addFields(
 				{ name: 'date created', value: `<t:${Math.round(interaction.guild.createdTimestamp / 1000)}:f>` },
 				{ name: '\u200B', value: '\u200B' },
