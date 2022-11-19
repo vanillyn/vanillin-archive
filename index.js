@@ -1,6 +1,7 @@
 // define dependencies  
 const fs = require('node:fs');
 const path = require('node:path');
+const Keyv = require('keyv');
 const { Client, Collection, Events, GatewayIntentBits } = require("discord.js");
 
 // define numbers
@@ -35,6 +36,10 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
+
+// begin keyv
+const keyv = new Keyv('postgresql://vanillyn:pass@localhost:5432/vanillin');
+keyv.on('error', err => console.error('Keyv connection error in index.js:', err));
 
 client.login(token);
 

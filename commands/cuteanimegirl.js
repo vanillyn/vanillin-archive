@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
-const { auth } = require("../config.json");
+const { auth, vanillin } = require("../config.json");
 const { request } = require('undici');
 
 module.exports = {

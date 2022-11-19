@@ -1,6 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const gifs = ['https://vanillyn.shx.is/5M_ECbrNg.gif','https://vanillyn.shx.is/5M_EJUT_D.gif','https://vanillyn.shx.is/5M_EM257F.gif','https://vanillyn.shx.is/5M_EN6bbG.gif','https://cdn.upload.systems/uploads/nBvuSSJi.gif','https://cdn.upload.systems/uploads/QK6ckEcT.gif','https://cdn.upload.systems/uploads/pQrMocYf.gif','https://cdn.upload.systems/uploads/nK7m6r6Y.gif']
-
+const { vanillin } = require('../config.json')
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('kiss')
