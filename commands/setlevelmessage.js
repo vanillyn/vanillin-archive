@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('discord.js');
 const Keyv = require('keyv');
-const msg = new Keyv('postgresql://vanillyn:pass@localhost:5432/vanillin', { namespace: 'msg' });
+const { auth } = require('../config.json')
+const msg = new Keyv(auth.keyvurl, { namespace: 'msg' });
 msg.on('error', err => console.error('Keyv connection error in setlevelmessage.js:', err));
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -15,6 +16,6 @@ module.exports = {
 		const sent = await interaction.reply({ content: 'setting level message...', ephemeral:true, fetchReply: true })
 		const Msg = interaction.options.getString('message') ?? "{user} has levelled up!";
 		await msg.set(interaction.guild.id, Msg)
-		await interaction.reply({ content: `set the levelling message to ${await msg.get(interaction.guild.id)}!`, ephemeral: true });
+		await interaction.editReply({ content: `set the levelling message to ${await msg.get(interaction.guild.id)}!`, ephemeral: true });
 	},
 };

@@ -5,7 +5,7 @@ module.exports = {
 	once: true,
 	execute(client) {
 		console.log(`ready, ${client.user.tag}`);
-		client.user.setActivity('meows', { type: ActivityType.Listening });
-		setInterval(activity => { client.user.setActivity('Flavor Wars!', { type: ActivityType.Competing }); }, 3600000);
+		client.user.setActivity('dial-up noises!', { type: ActivityType.Listening });
+		setInterval(activity => { client.user.setActivity('3 servers!', { type: ActivityType.Watching }); }, 3600000);
 	},
 };

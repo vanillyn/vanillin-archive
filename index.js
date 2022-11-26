@@ -5,10 +5,10 @@ const Keyv = require('keyv');
 const { Client, Collection, Events, GatewayIntentBits } = require("discord.js");
 
 // define numbers
-const { clientId, token } = require("./config.json");
+const { clientId, token, auth } = require("./config.json");
 
 // define client
-const client = new Client({intents:[GatewayIntentBits.Guilds]});
+const client = new Client({intents:[GatewayIntentBits.Guilds,GatewayIntentBits.GuildMembers,GatewayIntentBits.MessageContent,GatewayIntentBits.GuildMessages]});
 
 // define commands
 client.commands = new Collection();
@@ -36,9 +36,8 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
-
 // begin keyv
-const keyv = new Keyv('postgresql://vanillyn:pass@localhost:5432/vanillin');
+const keyv = new Keyv(auth.keyvurl);
 keyv.on('error', err => console.error('Keyv connection error in index.js:', err));
 
 client.login(token);
