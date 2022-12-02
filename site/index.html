@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vanillin site - wip</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Just fun and games. Vanillin = bland.">
+    <meta name="title" content="vanillin">
+    <meta name="keywords" content="vanilla, meow, html, discord, bot">
+    <meta name="author" content="Vanillyn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="vanillin" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://vanillyn.github.io/webprojects/vanillin" />
+    <meta property="og:image" content="https://img3.gelbooru.com//images/7c/a5/7ca57e7b957615fc61573f63909e6ba6.gif" />
+    <meta property="og:description" content="Just fun and games. Vanillin = bland." />
+    <meta name="theme-color" content="#FF9DC0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="makinas4flat.css">
+    <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/1015060231060983891/1035299761667969145/luoxiaohei-cat.gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Makinas 4 Flat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+  <body class="w3-black">
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <div class="w3-bar w3-black">
+        <a href="https://www.vanillyn.tk" class="w3-bar-item w3-button w3-text-blue w3-hover-blue"><i class="fa fa-home"></i> main page</a>
+        <a href="https://www.vanillyn.tk/webprojects" class="w3-bar-item w3-button w3-text-yellow w3-hover-yellow"><i class="fa fa-arrow-left"></i> back to projects</a>
+        <!-- warning -->
+        <span class="w3-yellow w3-button w3-hover-white w3-right w3-padding-8" onclick="document.getElementById('warning').style.display='block'"><i class="fa fa-exclamation-triangle"></i> under construction</span>
+        <div class="w3-modal w3-center w3-black w3-greyscale-max w3-display-middle" style="background-image: url('https://cdn.upload.systems/uploads/wf6NgGUS.jpg')" id="warning">
+          <span class=" w3-display-center w3-center w3-padding-16 w3-xxlarge w3-text-black">This site is unfinished/under construction. This is an early version. - Vanillyn <span onclick="document.getElementById('warning').style.display='none'"
+          class="w3-button w3-display-topright w3-hover-white w3-large w3-yellow">&times;</span></span>
+        </div>
+      </div>
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      </header>
+      <div class="w3-container">
+        <div class="w3-card-4 w3-center">
+          <div onclick="showBox()"class="w3-pale-blue w3-hover-white w3-center w3-xlarge"><i id="arrow" class="fa fa-chevron-down"></i> bot invite links</div>
+          <div id="links" class="w3-bar-block w3-center w3-animate-bottom" style="display: none">
+            <a onclick="document.getElementById('stableError').style.display='block'"><div class="w3-padding-16 w3-center w3-win8-cyan w3-xlarge w3-disabled">Stable (unfinished)</div></a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1041411290138157168&permissions=415538474048&scope=bot"><div class="w3-center w3-win8-blue w3-xlarge w3-padding-16">Early Access (access to commands as they are finished)</div></a>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1006869596751528117&permissions=415538465856&scope=bot"><div class="w3-center w3-win8-cobalt w3-xlarge w3-padding-16">Development (access to commands as they are developed)</div></a>
+          </div>
+          <img src="https://cdn.upload.systems/uploads/qM6Hlpkc.png" class="w3-center w3-padding-16 w3-mobile">
+        </div>
+        <script>
+        function showBox() {
+        const box = document.getElementById("links")
+        const arrow = document.getElementById("arrow")
+        if (box.style.display == 'none') {
+        box.style.display='block'
+        arrow.className = arrow.className.replace(" fa-chevron-down", " fa-chevron-up")
+        } else {
+        box.style.display='none'
+                arrow.className = arrow.className.replace(" fa-chevron-up", " fa-chevron-down")
+        }
+        }
+        </script>
+      </div>
+          <div class="w3-container">
+        <div onclick="document.getElementById('id01').style.display='block'" class="w3-hover-white w3-blue w3-center w3-padding-8 w3-xlarge">view upcoming features</div>
+      </div>
+      <div class="w3-container w3-center">
+        <p class="w3-center w3-xxlarge">WIP emotion, emoji management, levelling, and api bot using slash commands and d.js.</p>
+        <p class="w3-center w3-large">Made by Vanillyn#0001</p><br>
+      </div>
+        <!-- wip modal -->
+        <div id="id01" class="w3-modal w3-black">
+          <div class="w3-modal-content w3-black">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+              <h2 class="w3-center">upcoming features</h2>
+              <h3 class=w3-center> emotion </h3>
+              <p class="w3-center">a large amount of emotion commands, using anime gifs to interact with other users.</p> <br>
+              <h3 class=w3-center> emoji management </h3>
+              <p class="w3-center">stealing and managing emojis in your server with ease. </p><br>
+              <h3 class=w3-center> levelling </h3>
+              <p class="w3-center">rewarding active users with simple levelling. </p><br>
+              <h3 class=w3-center> apis </h3>
+              <p class="w3-center">searching games, steam profiles, splatoon 2 and 3 nso info, <br>
+                genshin impact, punishing grey raven, honkai impact 3rd, and fate grand order tutorials and character info, <br>
+              google, youtube, and urban dictionary queries, and anime and manga info. </p>
+            </div>
+          </div>
+        </div>
+        <!-- modal end -->
+        <!-- stable error modal -->
+        <div id="stableError" class="w3-modal w3-black">
+          <div class="w3-modal-content w3-black">
+            <div class="w3-container">
+              <span onclick="document.getElementById('stableError').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+              <h2 class="w3-center">coming soon™</h2>
+              <h3 class=w3-center>i am currently working on this bot, the stable release will be out once every part is finished and polished. you can access the bot early by using the early access invite.</h3>
+            </div>
+          </div>
+        </div>
+        <!-- modal end -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w3-content w3-padding-16 w3-text-grey w3-xlarge w3-center w3-display-bottom">
+<p class="w3-tiny">Website made with <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>, bot made with <a href="https://discord.js.org" target="_blank" class="w3-hover-text-blue">discord.js</a></p>
+<!-- End footer -->
+</footer>
+<!-- END PAGE CONTENT -->
+</div>
+</body>
+</html>

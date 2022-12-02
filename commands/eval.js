@@ -1,6 +1,11 @@
-const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
-const { ownerId } = require('../config.json');
-
+const { SlashCommandBuilder, PermissionFlagsBits, Client, Collection, Events, GatewayIntentBits } = require('discord.js');
+const { ownerId, auth, vanillin } = require('../config.json');
+const fs = require('node:fs');
+const path = require('node:path');
+const Keyv = require('keyv');
+const client = new Client({intents:[GatewayIntentBits.Guilds,GatewayIntentBits.GuildMembers,GatewayIntentBits.MessageContent,GatewayIntentBits.GuildMessages]});
+const keyv = new Keyv(auth.keyvurl);
+keyv.on('error', err => console.error('Keyv connection error in eval.js:', err));
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('eval')
