@@ -3,14 +3,16 @@
 
 - [x] Finish branding
 - [x] Finish emotions commands
-- [x] Regret using discord.js instead of Oceanic
-- [x] Have every single person make fun of you for using discord.js
 - [x] Cry
 - [ ] Finish emojis commands 
 - [ ] Finish API commands
-- [ ] Finish Utility commands
-- [ ] Open server
+- [x] Finish Utility commands
+- [x] Cry
+- [x] Open [server](https://discord.gg/7bydMKCHkG)
+- [x] Finish [site](https://vanillyn.tk/vanillin)
+- [ ] Finish Readme
 - [ ] Polish
+- [x] Cry
 - [ ] maybe make moderation command things
 
 a wip utility/emotions bot made by vanillyn
