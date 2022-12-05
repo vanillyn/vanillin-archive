@@ -1,4 +1,3 @@
-# vanillin
-this is the website project for Vanillin
+the website for vanillin!
 
-which can be found [here](https://github.com/vanillyn/vanillin)
+### [here!](https://vanillyn.tk/vanillin)
