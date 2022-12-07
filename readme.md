@@ -8,10 +8,12 @@ a wip utility/emotions bot made by vanillyn
 - [ ] Finish emojis commands 
 - [ ] Finish API commands
 - [x] Finish Utility commands
+- [ ] Finisih help
+- [x] Suffer
 - [x] Cry
 - [x] Open [server](https://discord.gg/7bydMKCHkG)
 - [x] Finish [site](https://vanillyn.tk/vanillin)
 - [ ] Finish Readme
-- [ ] Polish
 - [x] Cry
 - [ ] maybe make moderation command things
+- [ ] Give up
