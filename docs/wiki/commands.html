@@ -38,7 +38,14 @@
       rel="stylesheet"
       href="https://www.w3schools.com/lib/w3-colors-win8.css"
     />
-    <style></style>
+    <style>
+      h1,h2,h3,h4,h5,h6 {font-family: "Comfortaa";}
+      .w3-bar, .w3-container, .w3-card, span {font-family: "Comfortaa"; text-decoration: none !important;}
+      .vn-link, a, a:visited, a:link, a:hover, a:active {text-decoration: none !important;}
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+       .w3-row-padding img {margin-bottom: 12px}
+    </style>
     <script>
       function showBar() {
         const bar = document.getElementById("bar");
