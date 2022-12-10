@@ -42,22 +42,29 @@
       h1,h2,h3,h4,h5,h6 {font-family: "Comfortaa";}
       .w3-bar, .w3-container, .w3-card, span {font-family: "Comfortaa"; text-decoration: none !important;}
       .vn-link, a, a:visited, a:link, a:hover, a:active {text-decoration: none !important;}
-      /* Remove margins from "page content" on small screens */
-      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+      /* remove margins from #main on small screens */
+      @media only screen and (max-width: 1150px) {#main {margin-left: 0} #back {display: none} #bar {width: 25%}}
        .w3-row-padding img {margin-bottom: 12px}
+       @media only screen and (max-width: 800px) {#bar {display: none} #arrow {display:none}}
+       .vn-img { margin-left: auto; margin-right: auto; width: 75%;}
+       .clearfix::after { content: ""; clear: both; display: table; }
     </style>
     <script>
       function showBar() {
         const bar = document.getElementById("bar");
         const arrow = document.getElementById("arrow");
+        const main = document.getElementById("main");
         if (bar.style.display == "none") {
           bar.style.display = "block";
+          bar.style.width = "20%";
+          main.style.marginLeft = "20%";
           arrow.className = arrow.className.replace(
             " fa-bars",
             " fa-window-close"
           );
         } else {
           bar.style.display = "none";
+          main.style.marginLeft = "0%";
           arrow.className = arrow.className.replace(
             " fa-window-close",
             " fa-bars"
@@ -66,17 +73,17 @@
       }
       </script>
   </head>
-  <body class="w3-black w3-padding-large" id="main">
+  <body class="w3-black w3-padding-large">
     <div
-      class="w3-sidebar w3-bar-block w3-black w3-outline w3-rightbar w3-border-blue w3-animate-left"
-      style="width: 20%; display: none;"
+      class="w3-sidebar w3-bar-block w3-black w3-outline w3-rightbar w3-border-blue w3-animate-left w3-left"
+      style="display: none;"
       id="bar"
     >
-      <div class="w3-blue w3-top w3-bar-item w3-padding-bottom" style="width: 20%;">
+      <div class="w3-panel w3-top w3-padding-bottom w3-blue clearfix" style="width: 20%;" id="back">
         <a href="https://vanillyn.tk/vanillin/wiki"
           ><h3> <i class="fa fa-chevron-left w3-button w3-hover-text-white"></i> vanillin wiki</h3></a
         >
-      </div>
+      </div><br><br><br>
       <a href="#utility" class="w3-bar-item w3-button w3-hover-red">Utility</a>
       <a href="#emotion" class="w3-bar-item w3-button w3-hover-orange"
         >Emotion</a
@@ -88,7 +95,7 @@
       <a href="#info" class="w3-bar-item w3-button w3-hover-blue"
         >Informational</a
       >
-      <div class="w3-container w3-bar-item w3-display-bottom w3-padding-top w3-padding-16">
+      <div class="w3-container w3-bar-item w3-padding-16" style="width: 100%; height:auto">
         <a href="https://vanillyn.tk" class="w3-blue w3-hover-black w3-button"
           ><i class="fa fa-heart"></i> vanillyn</a
         >
@@ -99,7 +106,7 @@
         >
       </div>
     </div>
-    <div class="w3-black" id="main">
+    <div class="w3-black w3-padding" id="main">
       <!-- header -->
       <header
         class="w3-container w3-padding-16 w3-center w3-bottombar w3-border-blue w3-panel"
@@ -119,8 +126,8 @@
       <!-- content -->
       <img
       src="https://cdn.upload.systems/uploads/jgrbgMsa.png"
-      class="w3-center w3-round w3-image"
-      style="border-radius: 20px; max-width: 200%; width: 100%; height: auto"
+      class="vn-img w3-round w3-image"
+      style="border-radius: 20px; max-width: 200%; width: 100%; height: auto;"
     />
     <h1 class="w3-center">commands wiki</h1>
     <h6 class="w3-center">Vanillin is a very standard bot created by Vanillyn. These are all the commands that are currently finished. This page will be updated as more commands are made!</h6>
