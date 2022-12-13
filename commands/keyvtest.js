@@ -25,15 +25,10 @@ module.exports = {
 				.addStringOption(option =>
 					option.setName('namespace')
 						.setDescription('the namespace of the variable')
-						.setRequired(true))
-				.addStringOption(option =>
-					option.setName('value')
-						.setDescription('the value of the variable')
 						.setRequired(true)))
 		.setDefaultMemberPermissions(PermissionFlagsBits.ManageServer),
 	async execute(interaction) {
 		if (interaction.options.getSubcommand() === 'get') {
-			const value = interaction.options.getString('value');
 			const ns = interaction.options.getString('namespace');
 			const msg = new Keyv(auth.keyvurl, { namespace: `${ns}` });
 			msg.on('error', err => console.error('Keyv connection error in keyvtest.js:', err));
