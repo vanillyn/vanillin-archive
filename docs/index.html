@@ -1,227 +1,238 @@
-<!DOCTYPE html>
+
+<!-- This example requires Tailwind CSS v3.0+ -->
 <html>
   <head>
     <title>C₈H₈O₃ | Vanillin</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="a not general purpose bot!!" />
+    <meta />
+    <meta name="description" content="vanillin - : very lame bot :" />
     <meta name="title" content="vanillin" />
-    <meta name="keywords" content="vanilla, meow, html, discord, bot" />
     <meta name="author" content="vanillyn" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="vanillin" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://vanillyn.github.io/vanillin" />
-    <meta
-      property="og:image"
-      content="https://img3.gelbooru.com//images/7c/a5/7ca57e7b957615fc61573f63909e6ba6.gif"
-    />
-    <meta property="og:description" content="a not general purpose bot!!" />
-    <meta name="theme-color" content="#FF9DC0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Comfortaa"
-    />
-    <link
-      rel="stylesheet"
-      href="https://raw.githubusercontent.com/vanillyn/vanillin/main/docs/makinas4flat.css"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://media.discordapp.net/attachments/1015060231060983891/1035299761667969145/luoxiaohei-cat.gif"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.w3schools.com/lib/w3-colors-win8.css"
-    />
-    <style>
-      p,h1,h2,h3,h4,h5,h6 {font-family: "Comfortaa";}
-      .w3-bar, .w3-container, .w3-card, span {font-family: "Comfortaa"; text-decoration: none !important;}
-      .vn-link, a, a:visited, a:link, a:hover, a:active {text-decoration: none !important;}
-      /* Remove margins from "page content" on small screens */
-      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-       .w3-row-padding img {margin-bottom: 12px}
-    </style>
+    <meta property="og:description" content="vanillin - : very lame bot :" />
+    <meta name="theme-color" content="#e7adf0" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/tailwind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body class="w3-black">
-    <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
-      <!-- standard header -->
-      <header class="w3-container w3-padding-16 w3-center" id="home">
-        <div class="w3-bar w3-black w3-hover-opacity-off">
-          <a
-          href="https://vanillyn.github.io"
-          class=" w3-bar-item w3-button w3-text-blue"
-          style="border-radius: 20px"
-          ><i class="fa fa-home"></i> vanillyn</a
-        >
-          <a
-            href="https://vanillyn.github.io/webprojects"
-            class="w3-bar-item w3-button w3-text-yellow w3-hover-yellow"
-            style="border-radius: 20px"
-            ><i class="fa fa-arrow-left"></i> back to projects</a
-          >
-          <a
-            class="w3-bar-item w3-text-green w3-button w3-hover-green"
-            style="border-radius: 20px"
-            onclick="showBox()"
-            href="#"
-            ><i class="fa fa-plus"></i> invite!</a
-          >
-        </div>
-      </header>
-      <img
-        src="https://cdn.upload.systems/uploads/jgrbgMsa.png"
-        class="w3-center w3-round w3-image"
-        style="border-radius: 20px; max-width: 200%; width: 100%; height: auto"
-      />
-      <div class="w3-container w3-center">
-        <p class="w3-center w3-xxlarge">upcoming bot by vanillyn</p>
-      </div>
-    </div>
-    <div class="w3-container w3-padding-16" id="inv">
-      <div class="w3-center">
-        <div
-          onclick="showBox()"
-          class="w3-pale-green w3-hover-white w3-center w3-xlarge"
-          style="border-radius: 20px"
-        >
-          <i id="arrow" class="fa fa-chevron-down"></i> bot invite links
-        </div>
-        <div
-          id="links"
-          class="w3-bar-block w3-center vn-link"
-          style="display: none; border-radius: 15px"
-        >
-          <a style="text-decoration: none !important;" href="#"
-            ><div
-              class="vn-link w3-animate-right w3-disabled w3-center w3-win8-cyan w3-xlarge"
-            >
-              Stable
-            </div></a
-          >
-          <a
-            style="text-decoration: none !important;"
-            href="https://discord.com/oauth2/authorize?client_id=1041411290138157168&permissions=415538474048&scope=bot"
-            ><div
-              class="vn-link w3-animate-left w3-center w3-win8-blue w3-xlarge"
-            >
-              Early Access
-            </div></a
-          >
-          <a
-            style="text-decoration: none !important;"
-            href="https://discord.com/api/oauth2/authorize?client_id=1006869596751528117&permissions=415538465856&scope=bot"
-            ><div
-              class="vn-link w3-animate-right w3-center w3-win8-cobalt w3-xlarge"
-            >
-              Development
-            </div></a
-          >
-        </div>
-      </div>
-    </div>
-    <script>
-      function showBox() {
-        const box = document.getElementById("links");
-        const arrow = document.getElementById("arrow");
-        if (box.style.display == "none") {
-          box.style.display = "block";
-          arrow.className = arrow.className.replace(
-            " fa-chevron-down",
-            " fa-chevron-up"
-          );
-        } else {
-          box.style.display = "none";
-          arrow.className = arrow.className.replace(
-            " fa-chevron-up",
-            " fa-chevron-down"
-          );
-        }
-      }
-    </script>
-    <div class="w3-container">
+  <body class="frappe" style="background-color: #303446">
+    <div class="isolate frappe" style="background-color: #303446">
       <div
-        onclick="document.getElementById('id01').style.display='block'"
-        class="w3-hover-white w3-blue w3-center w3-padding-8 w3-xlarge"
-        style="border-radius: 20px"
+        class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
       >
-        <i class="fa fa-cogs"></i> view upcoming features
-      </div>
-    </div>
-    <!-- wip modal -->
-    <div id="id01" class="w3-modal w3-animate-opacity">
-      <div class="w3-modal-content w3-white" style="border-radius: 20px;">
-        <div class="w3-container">
-          <span
-            onclick="document.getElementById('id01').style.display='none'"
-            class="w3-button w3-display-topright"
-            >&times;</span
-          >
-          <h1 class="w3-center w3-display-top w3-opacity-min">features</h1>
-          <h3 class="w3-center">emotion</h3>
-          <p class="w3-center">
-            a large amount of emotion commands, using anime gifs to interact
-            with other users!
-          </p>
-          <h3 class="w3-center">emoji management</h3>
-          <p class="w3-center">stealing and managing emojis in your server!</p>
-          <h3 class="w3-center">informational</h3>
-          <p class="w3-center">
-            search info on games with steam, find information and images from
-            google, view information on genshin impact and fate/grand order, and
-            and find videos on youtube!
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- modal end -->
-    <!-- stable error modal -->
-    <div id="stableError" class="w3-modal w3-black">
-      <div class="w3-modal-content w3-black">
-        <div class="w3-container">
-          <span
-            onclick="document.getElementById('stableError').style.display='none'"
-            class="w3-button w3-display-topright"
-            >&times;</span
-          >
-          <h2 class="w3-center">coming soon™</h2>
-          <h3 class="w3-center">
-            i am currently working on this bot, the stable release will be out
-            once every part is finished and polished. you can access the bot
-            early by using the early access invite.
-          </h3>
-        </div>
-      </div>
-    </div>
-    <!-- modal end -->
-    <!-- Footer -->
-    <footer
-      class="w3-content w3-padding-16 w3-text-grey w3-xlarge w3-center w3-display-bottom"
-    >
-      <p class="w3-tiny">
-        Website made with
-        <a
-          href="https://www.w3schools.com/w3css/default.asp"
-          target="_blank"
-          class="w3-hover-text-green"
-          >w3.css</a
-        >, bot made with
-        <a
-          href="https://discord.js.org"
-          target="_blank"
-          class="w3-hover-text-blue"
-          >discord.js</a
+        <svg
+          class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+          viewBox="0 0 1155 678"
+          xmlns="http://www.w3.org/2000/svg"
         >
-      </p>
-      <!-- End footer -->
-    </footer>
-    <!-- END PAGE CONTENT -->
+          <path
+            fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)"
+            fill-opacity=".3"
+            d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+          />
+          <defs>
+            <linearGradient
+              id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533"
+              x1="1155.49"
+              x2="-78.208"
+              y1=".177"
+              y2="474.645"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#9089FC"></stop>
+              <stop offset="1" stop-color="#FF80B5"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="px-6 pt-6 lg:px-8">
+        <nav class="flex justify-between items-center" aria-label="Global">
+          <div class="flex lg:flex-1"></div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="inline-flex justify-center items-center p-2.5 -m-2.5 text-gray-700 rounded-md"
+            >
+              <span class="sr-only">Open main menu</span>
+              <!-- Heroicon name: outline/bars-3 -->
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a
+              href="https://discord.gg/9WJWG8JWMK"
+              class="px-2.5 py-0.5 text-sm font-semibold leading-6 text-white bg-indigo-400 rounded-md shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+              >discord</a
+            >
+
+            <a
+              href="/vanillin"
+              class="text-sm font-semibold leading-6 text-gray-50"
+              >vanillin</a
+            >
+
+            <a
+              href="contact"
+              class="text-sm font-semibold leading-6 text-gray-50"
+              >contact</a
+            >
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a
+              href="https://vendicated.dev"
+              class="text-sm font-semibold leading-6 text-gray-300"
+              >vendicated.dev<span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div role="dialog" aria-modal="true">
+          <div
+            focus="true"
+            class="overflow-y-auto fixed inset-0 z-10 px-6 py-6 bg-white lg:hidden"
+          >
+            <div class="flex justify-between items-center">
+              <button
+                type="button"
+                class="p-2.5 -m-2.5 text-gray-700 rounded-md"
+              >
+                <span class="sr-only">Close menu</span>
+                <!-- Heroicon name: outline/x-mark -->
+                <svg
+                  class="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="flow-root mt-6">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="py-6 space-y-2">
+                  <a
+                    href=""
+                    class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-400/10"
+                    >discord</a
+                  >
+
+                  <a
+                    href="/vanillin"
+                    class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-400/10"
+                    >vanillin</a
+                  >
+
+                  <a
+                    href="contact"
+                    class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-400/10"
+                    >contact</a
+                  >
+                </div>
+                <div class="py-6">
+                  <a
+                    href="https://vendicated.dev"
+                    class="block px-3 py-2.5 -mx-3 text-base font-semibold leading-6 text-gray-900 rounded-lg hover:bg-gray-400/10"
+                    >vendicated.dev</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="relative px-6 lg:px-8">
+          <div class="py-32 mx-auto max-w-2xl sm:py-48 lg:py-12">
+            <div class="hidden sm:mb-8 sm:flex sm:justify-center"></div>
+            <div class="text-center">
+              <h1 class="text-4xl font-light text-gray-300 sm:text-6xl">
+                vanillin
+              </h1>
+              <p class="mt-6 text-lg leading-8 text-gray-200">
+                upcoming bot by vanillyn
+              </p>
+              <img
+                src="img/vanillin.png"
+                class="object-cover py-2 w-full h-full rounded"
+              />
+              <div class="flex gap-x-6 justify-center items-center mt-10">
+                <a
+                  href="#"
+                  class="text-base font-semibold leading-7 text-yellow-300"
+                  >stable</a
+                >
+                <a
+                  href="#"
+                  class="text-base font-semibold leading-7 text-orange-300"
+                  >early access</a
+                >
+                <a
+                  href="#"
+                  class="text-base font-semibold leading-7 text-red-300"
+                  >development</a
+                >
+                <a
+                href="https://keyoxide.org/6992D626E427CDA8501393E2A0383D02385FFFC9"
+                class="text-base font-semibold leading-7 text-green-200"
+                style="color: rgb(187 247 208)"
+                >keyoxide <span aria-hidden="true"><i class="fa fa-key"></i></span></a
+              >
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          >
+            <svg
+              class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+              viewBox="0 0 1155 678"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
+                fill-opacity=".3"
+                d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+              />
+              <defs>
+                <linearGradient
+                  id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
+                  x1="1155.49"
+                  x2="-78.208"
+                  y1=".177"
+                  y2="474.645"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#9089FC"></stop>
+                  <stop offset="1" stop-color="#FF80B5"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
